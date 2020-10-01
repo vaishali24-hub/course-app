@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+
+/* css of course */
+.ActivitiesCourse {
+  margin: 16px auto;
+  padding: 16px;
+  display: flex;
+  background-color: #f1f1f1;
+  align-items: flex-start;
+  border: 1px solid #dcdcdc;
+}
+@media (min-width: 500px) {
+  .ActivitiesCourse {
+    width: auto;
+  }
+}
+
+/* css of details inside course except logo */
+.CourseDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* css of videolecture */
+.Lessons {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .Lessons {
+    flex-direction: column;
+  }
+}
+
+/* css of videolecture with image*/
+.ActivityLesson {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border: 1px solid #dcdcdc;
+}
+.ActivityLesson1 {
+  margin-right: 15px;
+}
+@media (max-width: 1024px) {
+  .ActivityLesson1 {
+    margin: 0 0 16px 0;
+  }
+}
+/* css of image inside video lecture */
+.Image {
+  height: 9vw;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .Image {
+    height: 35vw;
+  }
+}
+
+/* css of videolecture without image -- with logo*/
+.Lesson {
+  /* margin: 10px auto; */
+  padding-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #f1f1f1;
+}
+
+/* css of videolecture without image -- without logo*/
+.LessonDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+}
+
+/* css of lesson */
+.Lesson7 {
+  margin: 16px auto;
+  padding: 10px;
+  display: flex;
+  background-color: #f1f1f1;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dcdcdc;
+}
+
+.Content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Img {
+  height: 4em;
+  width: auto;
+}
+@media (max-width: 800px) {
+  .Img {
+    display: none;
+  }
+}
+/* css of different sections of details inside course*/
+.Name {
+  font-family: "Mulish", sans-serif;
+  font-size: 10px;
+  margin: 4px;
+}
+@media (max-width: 1024px) {
+  .Name {
+    font-size: 16px;
+  }
+}
+
+.Branch {
+  font-family: "Mulish", sans-serif;
+  font-size: 10px;
+  margin: 4px;
+  color: gray;
+}
+@media (max-width: 1024px) {
+  .Branch {
+    font-size: 16px;
+  }
+}
+
+.Prof {
+  font-family: "Mulish", sans-serif;
+  font-size: 10px;
+  margin: 4px;
+  color: gray;
+}
+@media (max-width: 1024px) {
+  .Prof {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .Prof {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Logo {
+    height: 24px;
+    width: 24px;
+    padding-right: 10px;
+  }
+  .LessonLogo {
+    height: 24px;
+    width: 24px;
+  }
+}

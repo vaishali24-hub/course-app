@@ -1,0 +1,58 @@
+.progressCircle {
+  position: relative;
+  display: inline-block;
+  /* margin: 1rem; */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #8cb8e0;
+}
+
+.progressCircle:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: colorload 1s;
+  animation: colorload 1s;
+}
+
+.progressCircle span {
+  font-size: 1rem;
+  color: #9ac0e6f6;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+}
+
+.progressCircle.progress35:after {
+  background-image: linear-gradient(
+      90deg,
+      #ebebeb 50%,
+      transparent 50%,
+      transparent
+    ),
+    linear-gradient(216deg, #071f8b 50%, #ebebeb 50%, #ebebeb);
+}
+
+@keyframes colorload {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}

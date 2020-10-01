@@ -1,0 +1,97 @@
+.Root {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .Root {
+    flex-direction: column;
+  }
+}
+
+.Header {
+  z-index: 100;
+}
+
+/* Sidebar */
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  position: fixed;
+  width: 16vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  border-right: 1px solid #c1c1c1;
+}
+@media (max-width: 1024px) {
+  .Sidebar {
+    display: none;
+  }
+}
+
+/* Menubar -- mobile view of sidebar */
+.Menubar {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .Menubar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 5px 15px;
+    border-bottom: 1px solid #c1c1c1;
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 12px 0 #c1c1c1;
+  }
+}
+
+.CloseIcon {
+  height: 48px;
+  width: 48px;
+  position: fixed;
+  z-index: 200;
+  top: 70px;
+  left: 300px;
+}
+
+.Courses {
+  /* position: absolute; */
+  margin-left: 20vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+@media (max-width: 1024px) {
+  .Courses {
+    margin: 80px 10px 0 10px;
+  }
+}
+
+.LatestActivities {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  margin: 0px 20px auto 10px;
+}
+@media (max-width: 1024px) {
+  .LatestActivities {
+    margin-right: 10px;
+  }
+}
+
+.Text {
+  color: #0256cc;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .Text {
+    color: #000000c5;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

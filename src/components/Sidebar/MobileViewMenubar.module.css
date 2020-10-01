@@ -1,0 +1,27 @@
+.Tabs {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 280px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dcdcdc;
+  padding-top: 10px;
+}
+
+.Tab {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 2em;
+}
+
+.Tab1 {
+  background-color: rgb(247, 198, 62);
+}
+
+.Icon {
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+}
